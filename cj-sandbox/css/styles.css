@@ -1,0 +1,50 @@
+/* CSS Document */
+
+
+/* home page _____________________________________________ */
+
+/* cards - all */
+.section-heading {font-size: 2em; }
+.card { border: none !important; border-radius: 0px !important; }
+.card-deck {padding: 7px 90px 7px 90px;}
+.card-time {font-size: .8em; font-weight: bold;}
+.card-text {font-size: .7em;}
+
+.card-image { position: relative;}
+.card-image img {width: 100%;}
+
+.overlay-date {position: absolute; top: 0px; left: 0px; margin: 23px; font-size: 1.1em; padding: 7px; width: 70px; }
+.overlay-cat {position: absolute; bottom: 0px; right: 0px; margin: 0px; font-size: .8em; padding: 14px; }
+.card-footer {text-align: right; border-top: none !important; font-size: .7em; background-color: rgba(0,0,0,0) !important;}
+
+/* card - Seasonal at BFPL */
+#seasonal {background-color: white; padding: 20px 0 20px 0;}
+#seasonal .card {background-color: #FCF5E7;}
+#seasonal .section-heading {color: black;}
+#seasonal .overlay-cat { background-color: white;}
+#seasonal .overlay-date {background-color: white; }
+#seasonal .card-footer {}
+
+/* card Upcoming on home page*/
+#upcoming {background-color: #DC1482;  }
+#upcoming .card {background-color: #AB0661; color: white;}
+#upcoming .section-heading {color: white;}
+#upcoming .overlay-cat { background-color: #AB0661;}
+#upcoming .overlay-date {background-color: #DC1482; }
+#upcoming .card-footer {}
+
+/* card Shops on home page */
+#shops {background-color: #DC1482;  }
+#shops .card {background-color: #AB0661; color: white;}
+#shops .section-heading {color: white;}
+#shops .overlay-cat { background-color: #AB0661;}
+#shops .overlay-date {background-color: #DC1482; }
+#shops .card-footer {}
+
+
+
+
+
+
+
+

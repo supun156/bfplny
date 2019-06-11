@@ -1,0 +1,107 @@
+/*
+CSS Specific to Shops / Food deatil pages
+*/
+
+.fusion-page-title-bar {display:none;}
+
+/* Default design for >1300 px screens, site size set to 1300px */
+#retail_hero_bkg {
+	width: 100vw !important;
+	position: relative;
+	margin-left: -50vw;
+	left: 50%;
+	height: calc(180px + 25vw);
+	max-height:540px;
+	background-color: #000000;
+	background-image: -webkit-linear-gradient(100deg, #ffffff 50%, #008000 50%);
+	padding: 30px;
+}
+
+#retail_hero_img {
+	width:100%;
+	max-width:1350px;
+	margin:0 auto;
+	height: calc(100px + 25vw);
+	max-height:450px;
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+	background-position:center !important;
+}
+
+/* Add top margin to these divs so they don't rest right on the upper divs */
+#retail_online, #retail_social_media {margin-top:20px !important;}
+
+.retail_special {
+	width:100%;
+	/*padding:35px;*/
+	padding:1.5%;
+	color:#ffffff;
+	background-color:#000000;
+	margin-bottom:15px;
+}
+
+.retail_full {
+	width:97% !important;
+	margin:0 1.5% !important;
+	clear:both;
+	margin-bottom:20px;
+}
+
+.retail_one_half {
+	width:47% !important;
+	margin:0 1.5% !important;
+	float:left;
+	margin-bottom:20px;
+}
+
+.retail_hours {
+	width:47%;
+	margin-right:3%;
+	float:left;
+}
+
+.retail_days_of_week {
+	
+}
+
+#retail_mapplic_map {
+	min-height:300px;
+	border:1px solid #e7e6e6;
+	/*background-color:#ccc;
+	padding:1.5%;*/
+}
+#retail_mapplic_map .mapplic-levels-select {display:none;}
+
+.retail_phone {clear:both;}
+.retail_schedule {margin-bottom:10px; overflow:auto;}
+.retail_hours {margin-bottom:15px;}
+.retail_website, .retail_phone {
+	margin-bottom:30px;
+}
+
+.retail_link, .retail_file {padding-bottom:20px;}
+.retail_outlink {
+	background:url(assets/out_link.png) right no-repeat;
+	background-size: auto 100%;
+	padding-right: 35px;
+}
+.retail_file_link {
+	background:url(assets/file_link.png) left no-repeat;
+	background-size: auto 100%;
+	padding-left: 25px;
+}
+.retail_social_link {
+	float:left;
+	margin-right:20px;
+}
+#retail_detail {padding-top:30px;}
+
+
+/* Mobile breakpoint and adjustments */
+@media screen and (max-width: 639px) {
+	.retail_full, .retail_one_half {
+		width:100% !important;
+		margin: 1.5% !important;
+		margin-bottom:20px;
+	}
+}

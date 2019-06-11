@@ -1,0 +1,103 @@
+/*
+CSS Specific to Card Generation
+*/
+
+/* Default design for >1300 px screens, site size set to 1300px */
+/* Card definitions for home page renderings */
+#full_shop_container, #full_food_container, #mobile_shop_container, #mobile_food_container {
+	width: 100vw !important;
+	position: relative;
+	margin-left: -50vw;
+	left: 50%;
+	padding:40px;
+	overflow:auto;
+}
+
+/* Section background colors */
+#full_shop_container, #mobile_shop_container {background-color:#543296;}
+#full_food_container, #mobile_food_container {background-color:#008000;}
+#mobile_shop_container, #mobile_food_container {display:none;}
+
+/* Card background colors */
+#full_shop_container .shop_card_container, #mobile_shop_container .shop_card_container {
+	background-color:#402475;
+}
+#full_food_container .shop_card_container, #mobile_food_container .shop_card_container {
+	background-color:#005f00;
+}
+
+
+#full_shop_content, #full_food_content, #mobile_shop_content, #mobile_food_content {
+	width:100%;
+	max-width:1300px;
+	margin:0 auto;
+}
+
+.full_shop_cards {
+	overflow:auto;
+	width:102%;
+	margin-left:-1%;
+	margin-bottom:35px;
+}
+
+.full_shop_directory {
+	padding:10px 15px;
+	border:1px solid white;
+}
+
+.shop_card_container {
+	width:31.33%;
+	margin:0 1%;
+	float:left;
+	height:240px;
+}
+
+.shop_card_image {
+	position:relative;
+	width:29%;
+	height:100%;
+	float:left;
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+	background-position:center !important;
+}
+.shop_card_overlay {
+	
+}
+.shop_card_detail {
+	position:relative;
+	color:#ffffff;
+	float:right;
+	height:100%;
+	width:70%;
+	padding:10px;
+}
+
+.shop_card_title {
+	height: 100px;
+}
+.shop_card_snippet {
+	height: 80px;
+}
+.shop_card_special {
+	position: absolute;
+	bottom:24px;
+}
+.shop_card_link {
+	position: absolute;
+	bottom:24px;
+	right:20px;
+}
+
+
+/* Mobile breakpoint and adjustments */
+@media screen and (max-width: 639px) {
+	#full_shop_container, #full_food_container {display:none;}
+	#mobile_shop_container, #mobile_food_container {display:block; padding:20px;}
+
+	.shop_card_container {
+		width:100%;
+		margin:0;
+		height:100%;
+	}
+}
